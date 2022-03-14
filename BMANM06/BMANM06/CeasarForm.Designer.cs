@@ -37,6 +37,7 @@ namespace BMANM06
             this.label2 = new System.Windows.Forms.Label();
             this.richTBCeasar1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnReload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCeasarDecode
@@ -48,6 +49,7 @@ namespace BMANM06
             this.btnCeasarDecode.TabIndex = 35;
             this.btnCeasarDecode.Text = "Giải mã";
             this.btnCeasarDecode.UseVisualStyleBackColor = true;
+            this.btnCeasarDecode.Click += new System.EventHandler(this.btnCeasarDecode_Click);
             // 
             // btnCeasarEncode
             // 
@@ -58,6 +60,7 @@ namespace BMANM06
             this.btnCeasarEncode.TabIndex = 34;
             this.btnCeasarEncode.Text = "Mã hóa";
             this.btnCeasarEncode.UseVisualStyleBackColor = true;
+            this.btnCeasarEncode.Click += new System.EventHandler(this.btnCeasarEncode_Click);
             // 
             // richTBCeasar3
             // 
@@ -116,11 +119,22 @@ namespace BMANM06
             this.label1.TabIndex = 28;
             this.label1.Text = "Bản rõ";
             // 
+            // btnReload
+            // 
+            this.btnReload.Location = new System.Drawing.Point(661, 20);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(112, 34);
+            this.btnReload.TabIndex = 36;
+            this.btnReload.Text = "Reload";
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
             // CeasarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 446);
+            this.Controls.Add(this.btnReload);
             this.Controls.Add(this.btnCeasarDecode);
             this.Controls.Add(this.btnCeasarEncode);
             this.Controls.Add(this.richTBCeasar3);
@@ -147,5 +161,6 @@ namespace BMANM06
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox richTBCeasar1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnReload;
     }
 }
