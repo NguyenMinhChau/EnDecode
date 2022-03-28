@@ -1,0 +1,5 @@
+C:\Users\NGUYEN MINH CHAU\OneDrive\Documents\4501104023_BMANM_COMP104901\Demo mã hóa.exe
+C:\Users\NGUYEN MINH CHAU\OneDrive\Documents\4501104023_BMANM_COMP104901\Demo mã hóa.dll
+C:\Users\NGUYEN MINH CHAU\OneDrive\Documents\4501104023_BMANM_COMP104901\Demo mã hóa.deps.json
+C:\Users\NGUYEN MINH CHAU\OneDrive\Documents\4501104023_BMANM_COMP104901\Demo mã hóa.runtimeconfig.json
+C:\Users\NGUYEN MINH CHAU\OneDrive\Documents\4501104023_BMANM_COMP104901\Demo mã hóa.pdb

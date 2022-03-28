@@ -45,5 +45,11 @@ namespace BMANM06
             var form = new DESForm();
             form.Show();
         }
+
+        private void MNVigenere_Click(object sender, EventArgs e)
+        {
+            var form  = new VigenereForm();
+            form.Show();
+        }
     }
 }

@@ -34,6 +34,8 @@ namespace BMANM06
             this.MNhash = new System.Windows.Forms.ToolStripMenuItem();
             this.MNrsa = new System.Windows.Forms.ToolStripMenuItem();
             this.MN3des = new System.Windows.Forms.ToolStripMenuItem();
+            this.vigenereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MNVigenere = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +46,9 @@ namespace BMANM06
             this.MNceasar,
             this.MNhash,
             this.MNrsa,
-            this.MN3des});
+            this.MN3des,
+            this.vigenereToolStripMenuItem,
+            this.MNVigenere});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 33);
@@ -79,6 +83,18 @@ namespace BMANM06
             this.MN3des.Text = "3DES";
             this.MN3des.Click += new System.EventHandler(this.MN3des_Click);
             // 
+            // vigenereToolStripMenuItem
+            // 
+            this.vigenereToolStripMenuItem.Name = "vigenereToolStripMenuItem";
+            this.vigenereToolStripMenuItem.Size = new System.Drawing.Size(16, 29);
+            // 
+            // MNVigenere
+            // 
+            this.MNVigenere.Name = "MNVigenere";
+            this.MNVigenere.Size = new System.Drawing.Size(97, 29);
+            this.MNVigenere.Text = "Vigenere";
+            this.MNVigenere.Click += new System.EventHandler(this.MNVigenere_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -104,6 +120,8 @@ namespace BMANM06
         private System.Windows.Forms.ToolStripMenuItem MNhash;
         private System.Windows.Forms.ToolStripMenuItem MNrsa;
         private System.Windows.Forms.ToolStripMenuItem MN3des;
+        private System.Windows.Forms.ToolStripMenuItem vigenereToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MNVigenere;
     }
 }
 

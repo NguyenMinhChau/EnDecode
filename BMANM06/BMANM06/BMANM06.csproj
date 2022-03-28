@@ -4,6 +4,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>BMANM06.Program</StartupObject>
+    <AssemblyName>Demo mã hóa</AssemblyName>
+    <RootNamespace>Demo mã hóa</RootNamespace>
+    <SignAssembly>true</SignAssembly>
   </PropertyGroup>
 
 </Project>

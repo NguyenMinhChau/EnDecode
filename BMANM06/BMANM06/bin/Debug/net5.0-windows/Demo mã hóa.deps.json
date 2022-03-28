@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "BMANM06/1.0.0": {
+      "Demo mã hóa/1.0.0": {
         "runtime": {
-          "BMANM06.dll": {}
+          "Demo mã hóa.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "BMANM06/1.0.0": {
+    "Demo mã hóa/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
