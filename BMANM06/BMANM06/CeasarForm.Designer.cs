@@ -38,6 +38,11 @@ namespace BMANM06
             this.richTBCeasar1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnReload = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.NUDoDoi = new System.Windows.Forms.NumericUpDown();
+            this.btnEncryptEG = new System.Windows.Forms.Button();
+            this.btnDecryptEG = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.NUDoDoi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCeasarDecode
@@ -47,7 +52,7 @@ namespace BMANM06
             this.btnCeasarDecode.Name = "btnCeasarDecode";
             this.btnCeasarDecode.Size = new System.Drawing.Size(112, 34);
             this.btnCeasarDecode.TabIndex = 35;
-            this.btnCeasarDecode.Text = "Giải mã";
+            this.btnCeasarDecode.Text = "Giải mã TV";
             this.btnCeasarDecode.UseVisualStyleBackColor = true;
             this.btnCeasarDecode.Click += new System.EventHandler(this.btnCeasarDecode_Click);
             // 
@@ -58,7 +63,7 @@ namespace BMANM06
             this.btnCeasarEncode.Name = "btnCeasarEncode";
             this.btnCeasarEncode.Size = new System.Drawing.Size(112, 34);
             this.btnCeasarEncode.TabIndex = 34;
-            this.btnCeasarEncode.Text = "Mã hóa";
+            this.btnCeasarEncode.Text = "Mã hóa TV";
             this.btnCeasarEncode.UseVisualStyleBackColor = true;
             this.btnCeasarEncode.Click += new System.EventHandler(this.btnCeasarEncode_Click);
             // 
@@ -129,11 +134,53 @@ namespace BMANM06
             this.btnReload.UseVisualStyleBackColor = true;
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(387, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 25);
+            this.label4.TabIndex = 37;
+            this.label4.Text = "Độ dời k";
+            // 
+            // NUDoDoi
+            // 
+            this.NUDoDoi.Location = new System.Drawing.Point(474, 23);
+            this.NUDoDoi.Name = "NUDoDoi";
+            this.NUDoDoi.Size = new System.Drawing.Size(180, 31);
+            this.NUDoDoi.TabIndex = 38;
+            // 
+            // btnEncryptEG
+            // 
+            this.btnEncryptEG.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEncryptEG.Location = new System.Drawing.Point(234, 164);
+            this.btnEncryptEG.Name = "btnEncryptEG";
+            this.btnEncryptEG.Size = new System.Drawing.Size(112, 34);
+            this.btnEncryptEG.TabIndex = 39;
+            this.btnEncryptEG.Text = "Mã hóa EG";
+            this.btnEncryptEG.UseVisualStyleBackColor = true;
+            this.btnEncryptEG.Click += new System.EventHandler(this.btnEncryptEG_Click);
+            // 
+            // btnDecryptEG
+            // 
+            this.btnDecryptEG.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDecryptEG.Location = new System.Drawing.Point(234, 302);
+            this.btnDecryptEG.Name = "btnDecryptEG";
+            this.btnDecryptEG.Size = new System.Drawing.Size(112, 34);
+            this.btnDecryptEG.TabIndex = 40;
+            this.btnDecryptEG.Text = "Giải mã EG";
+            this.btnDecryptEG.UseVisualStyleBackColor = true;
+            this.btnDecryptEG.Click += new System.EventHandler(this.btnDecryptEG_Click);
+            // 
             // CeasarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 446);
+            this.Controls.Add(this.btnDecryptEG);
+            this.Controls.Add(this.btnEncryptEG);
+            this.Controls.Add(this.NUDoDoi);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReload);
             this.Controls.Add(this.btnCeasarDecode);
             this.Controls.Add(this.btnCeasarEncode);
@@ -146,6 +193,7 @@ namespace BMANM06
             this.Name = "CeasarForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CeasarForm";
+            ((System.ComponentModel.ISupportInitialize)(this.NUDoDoi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +210,9 @@ namespace BMANM06
         private System.Windows.Forms.RichTextBox richTBCeasar1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReload;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown NUDoDoi;
+        private System.Windows.Forms.Button btnEncryptEG;
+        private System.Windows.Forms.Button btnDecryptEG;
     }
 }
